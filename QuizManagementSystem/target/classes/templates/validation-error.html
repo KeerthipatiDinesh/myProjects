@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Validation Error</title>
+</head>
+
+<body>
+	<h1>Validation Error</h1>
+	<p th:text="${error}"></p>
+	<ul>
+		<li th:each="error : ${details}" th:text="${error.defaultMessage}"></li>
+	</ul>
+	<a href="/createQuiz">Go Back</a>
+</body>
+
+</html>
